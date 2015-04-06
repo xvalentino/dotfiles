@@ -19,25 +19,24 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 "let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim' " Vundle to install plugins
+Plugin 'tpope/vim-sensible' " Universal Vim configs
+Plugin 'jelera/vim-javascript-syntax' " Javascript syntax highlighting
+Plugin 'vim-ruby/vim-ruby' " Ruby syntax highlighting
+Plugin 'fatih/vim-go' " Go syntax highlighting
+Plugin 'tpope/vim-rails' " Rails syntax and shotcuts
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'tpope/vim-sensible'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-rails'
-Plugin 'fatih/vim-go'
-Plugin 'tpope/vim-endwise'
-Plugin 'shougo/neocomplete.vim'
-Plugin 'tpope/vim-bundler'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'chriskempson/base16-vim'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'Raimondi/delimitMate'
-Plugin 'chrisbra/Colorizer'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'fullybaked/toggle-numbers.vim'
+Plugin 'tpope/vim-endwise' " ends created with defs, dos, ifs,
+Plugin 'shougo/neocomplete.vim' " autocomplete
+Plugin 'tpope/vim-bundler' " syntax highlighting in gemfile, and cool bundle stuff
+Plugin 'nanotech/jellybeans.vim' " colorschme
+Plugin 'Raimondi/delimitMate' " autoclose quotes, parenthesis, brackets, etc.
+Plugin 'chrisbra/Colorizer' " can view colors live with 
+Plugin 'thoughtbot/vim-rspec' "run rspec tests from vim
+Plugin 'scrooloose/nerdtree' " navigate through tree of files
+Plugin 'kien/ctrlp.vim' " navigate through files with ctrl p
+Plugin 'fullybaked/toggle-numbers.vim' "ctrl-n to toggle relative and abs numbers
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -90,3 +89,11 @@ inoremap kj <esc>
 " nerd tree toggle control-n
 map <C-T> :NERDTreeToggle<CR>
 
+" rspec vim keymappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+" colors in vim
+:let g:colorizer_auto_color = 1
