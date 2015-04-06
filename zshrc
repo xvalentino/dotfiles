@@ -4,15 +4,23 @@ export ZSH=$HOME/.oh-my-zsh
 
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
 # alias'
-alias 2module="cd ~/dev/ruby/2module/"
+alias dotfiles="cd ~/.dotfiles/"
+alias 2module="cd ~/dev/turing/2module/"
+alias 3module="cd ~/dev/turing/3module/"
+alias pivot="cd ~/dev/turing/3module/the_pivot"
 alias vimrc="vim ~/.vimrc"  # vimrc from where ever
 alias zshrc="vim ~/.zshrc" # zshrc from where ever
 alias gs="git status" # git status alias
 alias ga="git add" # git add
-alias gcm="git commit -m" # git commit no twitter
 function gcmt {             # git commit with twitter
   git commit -m "$1"
   ruby -e 'require %(jumpstart_auth);JumpstartAuth.twitter.update(ARGV.join " ")' $1
+}
+
+function {
+echo "Updating Dotfiles"
+  cd ~/.dotfiles && git pull
+  cd ~/Dev/turing
 }
 
 # Set name of the theme to load.
