@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/VLS/Dev/Ruby/2module/routes-controllers-example/app/controllers'
+let g:netrw_dirhist_2='/Users/VLS/Dev/Ruby/2module/routes-controllers-example'
+let g:netrw_dirhist_3='/Users/VLS/Dev/ruby/3module/1week/the_pivot/app/views/home'
+let g:netrw_dirhist_4='/Users/VLS/Dev/ruby/3module/1week/the_pivot/app/views'
+let g:netrw_dirhist_5='/Users/VLS/Dev/ruby/3module/1week/the_pivot/app/views/borrowers'
+let g:netrw_dirhist_6='/Users/VLS/Dev/ruby/3module/1week/the_pivot/app/views'
