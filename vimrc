@@ -1,3 +1,6 @@
+" set leader to space
+let mapleader = "\<Space>"
+
 " set relative numbers
 set nu
 " so mouse can be used, and resize the panes
