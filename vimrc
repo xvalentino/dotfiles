@@ -33,7 +33,6 @@ Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-endwise' " ends created with defs, dos, ifs,
 Plugin 'shougo/neocomplete.vim' " autocomplete
 Plugin 'tpope/vim-bundler' " syntax highlighting in gemfile, and cool bundle stuff
-Plugin 'nanotech/jellybeans.vim' " colorschme
 Plugin 'Raimondi/delimitMate' " autoclose quotes, parenthesis, brackets, etc.
 Plugin 'chrisbra/Colorizer' " can view colors live with 
 Plugin 'thoughtbot/vim-rspec' "run rspec tests from vim
@@ -81,7 +80,6 @@ let g:UltiSnipsJumpBackwardtrigger="<c-k>"
 set t_Co=256
 
 :syntax on 
-:colorscheme jellybeans
 nnoremap <F3> :NumbersToggle<CR>
 nnoremap <F4> :NumbersOnOff<CR>
 :nnoremap <space> za
