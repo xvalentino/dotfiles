@@ -2,9 +2,10 @@
 let mapleader = "\<Space>"
 
 " cursor crosshairs
-hi CursorLine   cterm=NONE ctermbg=235
-hi CursorColumn cterm=NONE ctermbg=235
-nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+:set cursorline    " enable the horizontal line
+:set cursorcolumn  " enable the vertical line
+highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NON 
+highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
 " set relative numbers
 set nu
