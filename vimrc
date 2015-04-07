@@ -1,6 +1,11 @@
 " set leader to space
 let mapleader = "\<Space>"
 
+" cursor crosshairs
+hi CursorLine   cterm=NONE ctermbg=235
+hi CursorColumn cterm=NONE ctermbg=235
+nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
 " set relative numbers
 set nu
 " so mouse can be used, and resize the panes
@@ -34,7 +39,6 @@ Plugin 'tpope/vim-endwise' " ends created with defs, dos, ifs,
 Plugin 'shougo/neocomplete.vim' " autocomplete
 Plugin 'tpope/vim-bundler' " syntax highlighting in gemfile, and cool bundle stuff
 Plugin 'Raimondi/delimitMate' " autoclose quotes, parenthesis, brackets, etc.
-Plugin 'chrisbra/Colorizer' " can view colors live with 
 Plugin 'thoughtbot/vim-rspec' "run rspec tests from vim
 Plugin 'scrooloose/nerdtree' " navigate through tree of files
 Plugin 'kien/ctrlp.vim' " navigate through files with ctrl p
