@@ -17,7 +17,7 @@ function gcmt {             # git commit with twitter
   ruby -e 'require %(jumpstart_auth);JumpstartAuth.twitter.update(ARGV.join " ")' $1
 }
 
-function {
+function dotfile_update {
 echo "Updating Dotfiles"
   cd ~/.dotfiles && git pull
   cd ~/Dev/turing
