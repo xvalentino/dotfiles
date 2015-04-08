@@ -1,11 +1,8 @@
 " set leader to space
 let mapleader = "\<Space>"
 
-" cursor crosshairs
-:set cursorline    " enable the horizontal line
-:set cursorcolumn  " enable the vertical line
+set cursorline    " enable the horizontal line
 highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NON 
-highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
 " set relative numbers
 set nu
