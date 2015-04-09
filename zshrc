@@ -12,6 +12,9 @@ alias vimrc="vim ~/.vimrc"  # vimrc from where ever
 alias zshrc="vim ~/.zshrc" # zshrc from where ever
 alias gs="git status" # git status alias
 alias ga="git add" # git add
+alias notes="vim ~/dev/turing/3module/notes"
+alias fucked="push -f"
+alias gpu="git push --set-upstream origin HEAD"
 function gcmt {             # git commit with twitter
   git commit -m "$1"
   ruby -e 'require %(jumpstart_auth);JumpstartAuth.twitter.update(ARGV.join " ")' $1
