@@ -4,6 +4,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
 # alias'
+alias vim="nvim"
 alias dotfiles="cd ~/.dotfiles/"
 alias 2module="cd ~/dev/turing/2module/"
 alias 3module="cd ~/dev/turing/3module/"
