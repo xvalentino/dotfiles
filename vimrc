@@ -26,6 +26,8 @@ call vundle#begin()
 
 "let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim' " Vundle to install plugins
+Plugin 'godlygeek/tabular' " indent shit
+Plugin 'tpope/vim-commentary' " COMMENT STUFF WHOO
 Plugin 'tpope/vim-sensible' " Universal Vim configs
 Plugin 'jelera/vim-javascript-syntax' " Javascript syntax highlighting
 Plugin 'vim-ruby/vim-ruby' " Ruby syntax highlighting

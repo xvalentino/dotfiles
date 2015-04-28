@@ -1,10 +1,12 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+
 ##RVM IS BROKEN?## PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
 # alias'
 alias sshpi="ssh pi@10.0.0.11"
+alias per="cd ~/dev/turing/3module/personal_project"
 alias dotfiles="cd ~/.dotfiles/"
 alias 2module="cd ~/dev/turing/2module/"
 alias 3module="cd ~/dev/turing/3module/"
@@ -18,14 +20,14 @@ alias notes="vim ~/dev/turing/3module/notes"
 alias fucked="push -f"
 alias gpu="git push --set-upstream origin HEAD"
 function gcmt {             # git commit with twitter
-  git commit -m "$1"
-  ruby -e 'require %(jumpstart_auth);JumpstartAuth.twitter.update(ARGV.join " ")' $1
+git commit -m "$1"
+ruby -e 'require %(jumpstart_auth);JumpstartAuth.twitter.update(ARGV.join " ")' $1
 }
 
 function dotfile_update {
 echo "Updating Dotfiles"
-  cd ~/.dotfiles && git pull
-  cd ~/Dev/turing
+cd ~/.dotfiles && git pull
+cd ~/Dev/turing
 }
 
 # Set name of the theme to load.
@@ -107,3 +109,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ##RVM BROKEN## export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#
+#export PATH=${PATH}:/pathToTheAndroidSdkFolder/android-sdk-mac_86/platform-tools
