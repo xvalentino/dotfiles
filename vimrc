@@ -100,5 +100,13 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+" tabular keymapping
+if exists(":Tabularize")
+  nmap <Leader>f= :Tabularize /=<CR>
+  vmap <Leader>f= :Tabularize /=<CR>
+  nmap <Leader>f: :Tabularize /:\zs<CR>
+  vmap <Leader>f: :Tabularize /:\zs<CR>
+endif
+
 " colors in vim
 :let g:colorizer_auto_color = 1

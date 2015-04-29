@@ -5,6 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
 # alias'
+alias jorge="bundle install && rake db:setup"
 alias sshpi="ssh pi@10.0.0.11"
 alias per="cd ~/dev/turing/3module/personal_project"
 alias dotfiles="cd ~/.dotfiles/"
