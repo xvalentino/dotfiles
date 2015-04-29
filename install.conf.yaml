@@ -3,7 +3,6 @@
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
-    ~/.nvimrc: nvim
     ~/.vim: vim/
 - shell:
     - [git pull && git submodule update --init --recursive, Installing/updating submodules]
