@@ -5,9 +5,10 @@ export ZSH=$HOME/.oh-my-zsh
 
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
 # alias'
+alias rake='noglob rake' #so I can use rake with arguements in zsh
 alias jorge="bundle install && rake db:setup"
 alias sshpi="ssh pi@10.0.0.11"
-alias per="cd ~/dev/turing/3module/personal_project"
+alias per="cd ~/dev/turing/3module/personal_project" 
 alias dotfiles="cd ~/.dotfiles/"
 alias 2module="cd ~/dev/turing/2module/"
 alias 3module="cd ~/dev/turing/3module/"
