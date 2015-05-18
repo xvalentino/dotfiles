@@ -12,6 +12,7 @@ alias per="cd ~/dev/turing/3module/personal_project"
 alias dotfiles="cd ~/.dotfiles/"
 alias 2module="cd ~/dev/turing/2module/"
 alias 3module="cd ~/dev/turing/3module/"
+alias 4module="cd ~/dev/turing/4module/"
 alias dev="cd ~/dev"
 alias pivot="cd ~/dev/turing/3module/the_pivot"
 alias vimrc="vim ~/.vimrc"  # vimrc from where ever
