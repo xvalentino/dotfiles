@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
 
 # alias'
-alias vim='vim -X' #so vim isn't slow as fuck
+alias vim='nvim -X' #so vim isn't slow as fuck
 alias railsn="rails new -T --database=postgresql --skip-turbolinks"
 alias rake='noglob rake' #so I can use rake with arguements in zsh
 alias jorge="bundle install && rake db:setup"
@@ -17,11 +17,11 @@ alias 3module="cd ~/dev/turing/3module/"
 alias 4module="cd ~/dev/turing/4module/"
 alias dev="cd ~/dev"
 alias pivot="cd ~/dev/turing/3module/the_pivot"
-alias vimrc="vim ~/.vimrc"  # vimrc from where ever
-alias zshrc="vim ~/.zshrc" # zshrc from where ever
+alias vimrc="vim ~/.nvimrc"  # vimrc from where ever
+alias zshrc="nvim ~/.zshrc" # zshrc from where ever
 alias gs="git status" # git status alias
 alias ga="git add" # git add
-alias notes="vim ~/dev/turing/3module/notes"
+alias notes="nvim ~/dev/turing/3module/notes"
 alias fucked="push -f"
 alias gpu="git push --set-upstream origin HEAD"
 function gcmt {             # git commit with twitter
