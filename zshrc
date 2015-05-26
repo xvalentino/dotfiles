@@ -17,11 +17,11 @@ alias 3module="cd ~/dev/turing/3module/"
 alias 4module="cd ~/dev/turing/4module/"
 alias dev="cd ~/dev"
 alias pivot="cd ~/dev/turing/3module/the_pivot"
-alias vimrc="vim ~/.mvimrc"  # vimrc from where ever
-alias zshrc="mvim ~/.zshrc" # zshrc from where ever
+alias vimrc="vim ~/.vimrc"  # vimrc from where ever
+alias zshrc="vim ~/.zshrc" # zshrc from where ever
 alias gs="git status" # git status alias
 alias ga="git add" # git add
-alias notes="mvim ~/dev/turing/3module/notes"
+alias notes="vim ~/dev/turing/3module/notes"
 alias fucked="push -f"
 alias gpu="git push --set-upstream origin HEAD"
 function gcmt {             # git commit with twitter
