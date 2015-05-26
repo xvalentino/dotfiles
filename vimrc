@@ -1,6 +1,8 @@
 " set leader to space
 let mapleader = "\<Space>"
 
+colorscheme solarized
+
 set cursorline    " enable the horizontal line
 highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
