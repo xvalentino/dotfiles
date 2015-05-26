@@ -36,7 +36,7 @@ Plugin 'tpope/vim-rails' " Rails syntax and shotcuts
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-endwise' " ends created with defs, dos, ifs,
-Plugin 'shougo/neocomplete.vim' " autocomplete
+Plugin 'shougo/neocomplcache.vim' " autocomplete
 Plugin 'tpope/vim-bundler' " syntax highlighting in gemfile, and cool bundle stuff
 Plugin 'Raimondi/delimitMate' " autoclose quotes, parenthesis, brackets, etc.
 Plugin 'thoughtbot/vim-rspec' "run rspec tests from vim
