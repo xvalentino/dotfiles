@@ -2,7 +2,7 @@
 let mapleader = "\<Space>"
 
 set cursorline    " enable the horizontal line
-highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NON 
+highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
 " set relative numbers
 set nu

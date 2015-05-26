@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
 
 # alias'
-alias vim='nvim -X' #so vim isn't slow as fuck
+alias vim='nvim'
 alias railsn="rails new -T --database=postgresql --skip-turbolinks"
 alias rake='noglob rake' #so I can use rake with arguements in zsh
 alias jorge="bundle install && rake db:setup"
