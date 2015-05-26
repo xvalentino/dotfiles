@@ -2,8 +2,8 @@
 export ZSH=$HOME/.oh-my-zsh
 
 ##RVM IS BROKEN?## PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
+
 # alias'
 alias vim='vim -X' #so vim isn't slow as fuck
 alias railsn="rails new -T --database=postgresql --skip-turbolinks"
