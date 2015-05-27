@@ -6,8 +6,6 @@ highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=N
 
 " set relative numbers
 set nu
-" so mouse can be used, and resize the panes
-set mouse+=a
 
 filetype plugin indent on
 set expandtab
