@@ -40,7 +40,6 @@ Plugin 'shougo/neocomplcache.vim' " autocomplete
 Plugin 'tpope/vim-bundler' " syntax highlighting in gemfile, and cool bundle stuff
 Plugin 'Raimondi/delimitMate' " autoclose quotes, parenthesis, brackets, etc.
 Plugin 'thoughtbot/vim-rspec' "run rspec tests from vim
-Plugin 'scrooloose/nerdtree' " navigate through tree of files
 Plugin 'kien/ctrlp.vim' " navigate through files with ctrl p
 Plugin 'fullybaked/toggle-numbers.vim' "ctrl-n to toggle relative and abs numbers
 
@@ -90,9 +89,6 @@ nnoremap <F4> :NumbersOnOff<CR>
 
 inoremap jk <esc> 
 inoremap kj <esc> 
-
-" nerd tree toggle control-n
-map <C-T> :NERDTreeToggle<CR>
 
 " rspec vim keymappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
