@@ -23,6 +23,8 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 "let Vundle manage Vundle, required
+Plugin 'oblitum/rainbow' " rainbow parens
+Plugin 'kchmck/vim-coffee-script' " coffee script plugin
 Plugin 'gmarik/Vundle.vim' " Vundle to install plugins
 Plugin 'godlygeek/tabular' " indent shit
 Plugin 'tpope/vim-commentary' " COMMENT STUFF WHOO
@@ -104,3 +106,6 @@ endif
 
 " colors in vim
 :let g:colorizer_auto_color = 1
+
+" rainbow parens
+let g:rainbow_active = 1
