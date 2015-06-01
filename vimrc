@@ -24,6 +24,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 "let Vundle manage Vundle, required
+Plugin 't9md/vim-ruby-xmpfilter'
 Plugin 'oblitum/rainbow' " rainbow parens
 Plugin 'kchmck/vim-coffee-script' " coffee script plugin
 Plugin 'gmarik/Vundle.vim' " Vundle to install plugins
@@ -113,3 +114,8 @@ let g:rainbow_active = 1
 
 " rspec in vim :)
 nnoremap <Leader>s :call RunNearestSpec()<CR>
+
+" Seeing Is Believing
+map <Leader>b : % ! sib_ruby -S seeing_is_believing --alignment-strategy chunk --number-of-captures 300 --line-length 1000 --timeout 12<CR>;
+map <Leader>v : % ! sib_ruby -S seeing_is_believing --clean<CR>;
+map <Leader>n : % ! sib_ruby -S seeing_is_believing --xmpfilter-style --alignment-strategy chunk --number-of-captures 300 --line-length 1000 --timeout 12<CR>;
