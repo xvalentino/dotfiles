@@ -1,5 +1,6 @@
 " set leader to space
 let mapleader = "\<Space>"
+set shell=zsh\ --login
 
 set cursorline    " enable the horizontal line
 highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
@@ -109,3 +110,6 @@ endif
 
 " rainbow parens
 let g:rainbow_active = 1
+
+" rspec in vim :)
+nnoremap <Leader>s :call RunNearestSpec()<CR>
