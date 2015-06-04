@@ -2,6 +2,7 @@
 let mapleader = "\<Space>"
 set shell=zsh\ --login
 
+
 set cursorline    " enable the horizontal line
 highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
@@ -24,6 +25,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 "let Vundle manage Vundle, required
+Plugin 'dsawardekar/ember.vim' " ember syntax
 Plugin 't9md/vim-ruby-xmpfilter'
 Plugin 'oblitum/rainbow' " rainbow parens
 Plugin 'kchmck/vim-coffee-script' " coffee script plugin

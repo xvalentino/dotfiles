@@ -5,6 +5,8 @@ export ZSH=$HOME/.oh-my-zsh
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
 
 # alias'
+alias steve="npm install && bower install || npm install || bower install"
+alias cdgo='cd ~/dev/turing/4module/Go'
 alias vim='mvim -v'
 alias railsn="rails new -T --database=postgresql --skip-turbolinks"
 alias rake='noglob rake' #so I can use rake with arguements in zsh
