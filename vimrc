@@ -2,6 +2,9 @@
 let mapleader = "\<Space>"
 set shell=zsh\ --login
 
+"Set the guifont
+:set guifont=Menlo:h20
+
 
 set cursorline    " enable the horizontal line
 highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
@@ -25,6 +28,8 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 "let Vundle manage Vundle, required
+Plugin 'scrooloose/syntastic'
+Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'dsawardekar/ember.vim' " ember syntax
 Plugin 't9md/vim-ruby-xmpfilter'
 Plugin 'oblitum/rainbow' " rainbow parens
@@ -121,3 +126,14 @@ nnoremap <Leader>s :call RunNearestSpec()<CR>
 map <Leader>b : % ! sib_ruby -S seeing_is_believing --alignment-strategy chunk --number-of-captures 300 --line-length 1000 --timeout 12<CR>;
 map <Leader>v : % ! sib_ruby -S seeing_is_believing --clean<CR>;
 map <Leader>n : % ! sib_ruby -S seeing_is_believing --xmpfilter-style --alignment-strategy chunk --number-of-captures 300 --line-length 1000 --timeout 12<CR>;
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+"Error symbols for syntastic
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_style_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_style_warning_symbol = "⚠"
