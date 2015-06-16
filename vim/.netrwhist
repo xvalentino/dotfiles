@@ -1,7 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/VLS/Dev/turing/4module/4week/subpub/slacker/lib'
-let g:netrw_dirhist_2='/Users/VLS/Dev/turing/4module/tech_interview'
-let g:netrw_dirhist_3='/Users/VLS/Dev/turing/4module/Go'
-let g:netrw_dirhist_4='/Users/VLS/Dev/turing/4module/Go/src'
-let g:netrw_dirhist_5='/Users/VLS/Dev/turing/4module/genetic-demo'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/VLS/.dotfiles/vim/bundle/vim-rspec/bin'
+let g:netrw_dirhist_2='/Users/VLS/.dotfiles/vim/bundle/vim-rspec'
+let g:netrw_dirhist_3='/Users/VLS/.dotfiles/vim/bundle/vim-rspec/plugin'
