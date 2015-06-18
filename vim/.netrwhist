@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/VLS/.dotfiles/vim/bundle/vim-rspec'
-let g:netrw_dirhist_2='/Users/VLS/.dotfiles/vim/bundle/vim-rspec/plugin'
-let g:netrw_dirhist_3='/Users/VLS/Dev/turing/4module/projects/glass-basement'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/VLS'
+let g:netrw_dirhist_2='/Users/VLS/.oh-my-zsh'
+let g:netrw_dirhist_3='/Users/VLS/.oh-my-zsh/themes'
+let g:netrw_dirhist_4='/Users/VLS/Dev/turing/4module/projects/glass-basement'

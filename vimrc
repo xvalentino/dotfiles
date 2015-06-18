@@ -5,7 +5,6 @@ set shell=zsh\ --login
 "Set the guifont
 :set guifont=Menlo:h20
 
-
 set cursorline    " enable the horizontal line
 highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
@@ -28,6 +27,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 "let Vundle manage Vundle, required
+Plugin 'junegunn/seoul256.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'dsawardekar/ember.vim' " ember syntax
