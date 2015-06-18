@@ -27,6 +27,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 "let Vundle manage Vundle, required
+Plugin 'christoomey/vim-tmux-navigator' "navagate between tmux and vim
 Plugin 'junegunn/seoul256.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'mustache/vim-mustache-handlebars'
@@ -137,3 +138,15 @@ let g:syntastic_error_symbol = "✗"
 let g:syntastic_style_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_style_warning_symbol = "⚠"
+
+" move between panes with CTRL and direction keys
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+
+
+" ========== Tmux Integration ==========
+" resize panes to respond to Tmux
+autocmd VimResized * :wincmd =
