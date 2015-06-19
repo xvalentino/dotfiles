@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/VLS/.oh-my-zsh/themes'
 let g:netrw_dirhist_2='/Users/VLS/.dotfiles'
 let g:netrw_dirhist_3='/Users/VLS/.dotfiles/vim'
 let g:netrw_dirhist_4='/Users/VLS/.dotfiles/vim/bundle'
 let g:netrw_dirhist_5='/Users/VLS/.dotfiles/.git'
 let g:netrw_dirhist_6='.'
+let g:netrw_dirhist_7='/Users/VLS/.dotfiles'
