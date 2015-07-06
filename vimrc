@@ -27,19 +27,21 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 "let Vundle manage Vundle, required
+Plugin 'Shougo/neocomplete.vim' " autocomplete
 Plugin 'christoomey/vim-tmux-navigator' "navagate between tmux and vim
+Plugin 'pangloss/vim-javascript' " Javascript syntax highlighting
 Plugin 'junegunn/seoul256.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'dsawardekar/ember.vim' " ember syntax
 Plugin 't9md/vim-ruby-xmpfilter'
 Plugin 'oblitum/rainbow' " rainbow parens
+" Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'kchmck/vim-coffee-script' " coffee script plugin
 Plugin 'gmarik/Vundle.vim' " Vundle to install plugins
 Plugin 'godlygeek/tabular' " indent shit
 Plugin 'tpope/vim-commentary' " COMMENT STUFF WHOO
 Plugin 'tpope/vim-sensible' " Universal Vim configs
-Plugin 'jelera/vim-javascript-syntax' " Javascript syntax highlighting
 Plugin 'vim-ruby/vim-ruby' " Ruby syntax highlighting
 Plugin 'fatih/vim-go' " Go syntax highlighting
 Plugin 'tpope/vim-rails' " Rails syntax and shotcuts
@@ -84,7 +86,7 @@ let g:neocomplete#enable_at_startup = 1
 let g:airline_powerline_fonts = 1
 
 " trigger config for snippets
-let g:IltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardtrigger="<c-k>"
@@ -120,6 +122,31 @@ endif
 " rainbow parens
 let g:rainbow_active = 1
 
+
+" Rainbow
+" au VimEnter * RainbowParenthesesToggle
+" au Syntax * RainbowParenthesesLoadRound
+" au Syntax * RainbowParenthesesLoadSquare
+" au Syntax * RainbowParenthesesLoadBraces
+" let g:rbpt_colorpairs = [
+"       \ ['brown',       'RoyalBlue3'],
+"       \ ['Darkblue',    'SeaGreen3'],
+"       \ ['darkgray',    'DarkOrchid3'],
+"       \ ['darkgreen',   'firebrick3'],
+"       \ ['darkcyan',    'RoyalBlue3'],
+"       \ ['darkred',     'SeaGreen3'],
+"       \ ['darkmagenta', 'DarkOrchid3'],
+"       \ ['brown',       'firebrick3'],
+"       \ ['gray',        'RoyalBlue3'],
+"       \ ['yellow',       'SeaGreen3'],
+"       \ ['darkmagenta', 'DarkOrchid3'],
+"       \ ['Darkblue', 'firebrick3'],
+"       \ ['darkgreen', 'RoyalBlue3'],
+"       \ ['darkcyan', 'SeaGreen3'],
+"       \ ['darkred', 'DarkOrchid3'],
+"       \ ['red', 'firebrick3'],
+"       \ ]
+
 " rspec in vim :)
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 
@@ -128,14 +155,18 @@ map <Leader>b : % ! sib_ruby -S seeing_is_believing --alignment-strategy chunk -
 map <Leader>v : % ! sib_ruby -S seeing_is_believing --clean<CR>;
 map <Leader>n : % ! sib_ruby -S seeing_is_believing --xmpfilter-style --alignment-strategy chunk --number-of-captures 300 --line-length 1000 --timeout 12<CR>;
 
-" syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-"Error symbols for syntastic
-let g:syntastic_error_symbol = "✗"
-let g:syntastic_style_error_symbol = "✗"
+"Syntastic checkers
+let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_w = 0
+let g:syntastic_javascript_checkers = ['jshint']
+
+""Error symbols
+let g:syntastic_error_symbol = "💀"
+let g:syntastic_style_error_symbol = "💀"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_style_warning_symbol = "⚠"
 
@@ -150,3 +181,4 @@ map <C-l> <C-W>l
 " ========== Tmux Integration ==========
 " resize panes to respond to Tmux
 autocmd VimResized * :wincmd =
+
