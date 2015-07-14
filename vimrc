@@ -27,6 +27,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 "let Vundle manage Vundle, required
+Plugin 'scrooloose/nerdtree' " Nerdtree
 Plugin 'Shougo/neocomplete.vim' " autocomplete
 Plugin 'christoomey/vim-tmux-navigator' "navagate between tmux and vim
 Plugin 'pangloss/vim-javascript' " Javascript syntax highlighting
@@ -176,9 +177,17 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" Nerdtree Toggle
+map <Leader>j :NERDTreeToggle<CR>
 
 
 " ========== Tmux Integration ==========
 " resize panes to respond to Tmux
 autocmd VimResized * :wincmd =
+
+" Ignore some folders and files for CtrlP indexing
+let g:ctrlp_custom_ignore = {
+      \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp$',
+      \ 'file': '\.so$\|\.dat$|\.DS_Store$'
+      \ }
 
