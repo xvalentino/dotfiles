@@ -5,6 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
 
 # alias'
+alias work="dev ~/dev/work"
 alias steve="npm install && bower install || npm install || bower install"
 alias cdgo='cd ~/dev/turing/4module/projects/Go'
 alias vim='mvim -v'
@@ -24,10 +25,13 @@ alias zshrc="vim ~/.zshrc" # zshrc from where ever
 alias gs="git status" # git status alias
 alias ga="git add" # git add
 alias notes="vim ~/dev/turing/3module/notes"
-alias fucked="push -f"
 alias gpu="git push --set-upstream origin HEAD"
 function gcmt {             # git commit with twitter
 git commit -m "$1"
+ruby -e 'require %(jumpstart_auth);JumpstartAuth.twitter.update(ARGV.join " ")' $1
+}
+
+function tweet {             # tweet?!
 ruby -e 'require %(jumpstart_auth);JumpstartAuth.twitter.update(ARGV.join " ")' $1
 }
 
@@ -118,3 +122,4 @@ source $ZSH/oh-my-zsh.sh
 ##RVM BROKEN## export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #
 #export PATH=${PATH}:/pathToTheAndroidSdkFolder/android-sdk-mac_86/platform-tools
+ulimit -n 10000
