@@ -1,8 +1,16 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export EDITOR=vim
 
 ##RVM IS BROKEN?## PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
+
+alias b="bundle"
+alias bi="b install"
+alias be="b exec"
+alias bu="b update"
+alias brake="be rake"
+alias brails="be rails"
 
 # alias'
 alias work="dev ~/dev/work"

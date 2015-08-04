@@ -27,6 +27,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 "let Vundle manage Vundle, required
+Plugin 'ggreer/the_silver_searcher' " search stuff or something
 Plugin 'scrooloose/nerdtree' " Nerdtree
 Plugin 'Shougo/neocomplete.vim' " autocomplete
 Plugin 'christoomey/vim-tmux-navigator' "navagate between tmux and vim
