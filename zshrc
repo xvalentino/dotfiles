@@ -13,7 +13,7 @@ alias brake="be rake"
 alias brails="be rails"
 
 # alias'
-alias work="dev ~/dev/work"
+alias work="cd ~dev/work"
 alias steve="npm install && bower install || npm install || bower install"
 alias cdgo='cd ~/dev/turing/4module/projects/Go'
 alias vim='mvim -v'
