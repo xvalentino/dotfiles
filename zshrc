@@ -5,15 +5,15 @@ export EDITOR=vim
 ##RVM IS BROKEN?## PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
 
+# alias'
 alias b="bundle"
 alias bi="b install"
 alias be="b exec"
 alias bu="b update"
 alias brake="be rake"
 alias brails="be rails"
-
-# alias'
 alias work="cd ~/dev/work"
+alias pb="cd ~/dev/work/partsbook"
 alias steve="npm install && bower install || npm install || bower install"
 alias cdgo='cd ~/dev/turing/4module/projects/Go'
 alias vim='mvim -v'
