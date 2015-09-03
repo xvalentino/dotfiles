@@ -16,13 +16,13 @@ alias brails="be rails"
 alias work="cd ~dev/work"
 alias steve="npm install && bower install || npm install || bower install"
 alias cdgo='cd ~/dev/turing/4module/projects/Go'
-alias vim='mvim -v'
+alias vim='atom .'
 alias railsn="rails new -T --database=postgresql --skip-turbolinks"
 alias rake='noglob rake' #so I can use rake with arguements in zsh
 alias jorge="bundle install && rake db:setup"
 alias sshpi="ssh pi@10.0.0.11"
 alias per="cd ~/dev/turing/3module/personal_project" 
-alias dotfiles="cd ~/.dotfiles/"
+alias dotfiles="cd ~/.dot.dot......dotfiles/"
 alias 2module="cd ~/dev/turing/2module/"
 alias 3module="cd ~/dev/turing/3module/"
 alias 4module="cd ~/dev/turing/4module/"
