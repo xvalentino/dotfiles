@@ -41,13 +41,6 @@ echo "Updating Dotfiles"
 cd ~/.dotfiles && git pull
 cd ~/Dev/turing
 }
-function tweet {             # tweet?!
-ruby -e 'require %(jumpstart_auth);JumpstartAuth.twitter.update(ARGV.join " ")' $1
-}
-function gcmt {             # git commit with twitter
-git commit -m "$1"
-ruby -e 'require %(jumpstart_auth);JumpstartAuth.twitter.update(ARGV.join " ")' $1
-}
 
 source $ZSH/oh-my-zsh.sh # use oh-my-zsh
 export NVM_DIR="/Users/VLS/.nvm" # use node version manager
