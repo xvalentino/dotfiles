@@ -85,7 +85,6 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-map <Leader>j :NERDTreeToggle<CR>
 " ----------------------------------------------------------------------------
 " reading and writing files
 " ----------------------------------------------------------------------------
@@ -183,3 +182,8 @@ let g:syntastic_error_symbol = "💀"
 let g:syntastic_style_error_symbol = "💀"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_style_warning_symbol = "⚠"
+" -> NerdTree
+let NERDTreeQuitOnOpen=1
+map <Leader>j :NERDTreeToggle<CR>
+" -> ctrlp
+let g:ctrlp_dont_split = 'nerdtree' " after vim . ctrl-p will replace nerdtree instead of make another window
