@@ -6,6 +6,8 @@ export EDITOR=vim
 ##RVM IS BROKEN?##export PATH="$PATH:/usr/local/heroku/bin: .........."
 
 # alias'
+alias :q="exit"
+alias :wq="exit"
 alias b="bundle"
 alias bi="b install"
 alias be="b exec"
@@ -131,3 +133,9 @@ source $ZSH/oh-my-zsh.sh
 #
 #export PATH=${PATH}:/pathToTheAndroidSdkFolder/android-sdk-mac_86/platform-tools
 ulimit -n 10000
+
+# ADB
+PATH=${PATH}:/Users/VLS/Library/Android/sdk/platform-tools
+
+export NVM_DIR="/Users/VLS/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
