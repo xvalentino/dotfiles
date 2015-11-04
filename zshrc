@@ -8,6 +8,7 @@ alias :wq='exit'
 alias b='bundle'
 alias be='b exec'
 alias ga='git add'
+alias vim='mvim -v'
 alias gp='git push'
 alias gd='git diff'
 alias gf='git fetch'
@@ -51,7 +52,10 @@ cd ~/Dev/turing
 }
 
 source $ZSH/oh-my-zsh.sh # use oh-my-zsh
-export NVM_DIR='/Users/VLS/.nvm' # use node version manager
+export NVM_DIR='/Users/Uchiha/.nvm' # use node version manager
 [ -s '$NVM_DIR/nvm.sh' ] && . '$NVM_DIR/nvm.sh'  # loads nvm
-PATH=${PATH}:/Users/VLS/Library/Android/sdk/platform-tools # export Android Debugging Bridge so I can execute adb anywhere
+PATH=${PATH}:/Users/Uchiha/Library/Android/sdk/platform-tools # export Android Debugging Bridge so I can execute adb anywhere
 ulimit -n 10000 # limit shit so processes can't fork themselves infinitly and eat all of your memory. see https://en.wikipedia.org/wiki/Fork_bomb
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="/user/local/bin:$PATH"

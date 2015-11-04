@@ -79,8 +79,6 @@ let mapleader = "\<Space>" " set leader to space
 nnoremap <F3> :NumbersToggle<CR>
 nnoremap <F4> :NumbersOnOff<CR>
 :nnoremap <space> za
-inoremap jk <esc>
-inoremap kj <esc>
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
