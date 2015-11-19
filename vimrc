@@ -125,14 +125,11 @@ Plugin 'ggreer/the_silver_searcher' " search stuff or something
 Plugin 'scrooloose/nerdtree' " Nerdtree
 Plugin 'Shougo/neocomplete.vim' " autocomplete
 Plugin 'christoomey/vim-tmux-navigator' "navagate between tmux and vim
-Plugin 'pangloss/vim-javascript' " Javascript syntax highlighting
 Plugin 'junegunn/seoul256.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'dsawardekar/ember.vim' " ember syntax
 Plugin 't9md/vim-ruby-xmpfilter'
 Plugin 'oblitum/rainbow' " rainbow parens
-Plugin 'kchmck/vim-coffee-script' " coffee script plugin
 Plugin 'gmarik/Vundle.vim' " Vundle to install plugins
 Plugin 'tpope/vim-commentary' " COMMENT STUFF WHOO
 Plugin 'tpope/vim-sensible' " Universal Vim configs
@@ -147,6 +144,8 @@ Plugin 'Raimondi/delimitMate' " autoclose quotes, parenthesis, brackets, etc.
 Plugin 'thoughtbot/vim-rspec' "run rspec tests from vim
 Plugin 'kien/ctrlp.vim' " navigate through files with ctrl p
 Plugin 'fullybaked/toggle-numbers.vim' "ctrl-n to toggle relative and abs numbers
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 call vundle#end() " end vundle plugins
 
 " -> 'Shougo/neocomplete.vim'
@@ -154,18 +153,15 @@ call vundle#end() " end vundle plugins
 "     use ctrl-n to choose choice
 let g:neocomplete#enable_at_startup = 1 " turn on neocomplete
 let g:airline_powerline_fonts = 1
-
 " -> 'oblitum/rainbow'
 "     rainbow parenthesis
 let g:rainbow_active = 1
-
 " -> 'vim-rspec'
 "     run rspec from vim
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
-
 " -> 'scrooloose/syntastic'
 "     linter
 set statusline+=%#warningmsg#
@@ -185,3 +181,5 @@ let NERDTreeQuitOnOpen=1
 map <Leader>j :NERDTreeToggle<CR>
 " -> ctrlp
 let g:ctrlp_dont_split = 'nerdtree' " after vim . ctrl-p will replace nerdtree instead of make another window
+" -> jsx
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
