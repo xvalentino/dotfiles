@@ -146,6 +146,7 @@ Plugin 'kien/ctrlp.vim' " navigate through files with ctrl p
 Plugin 'fullybaked/toggle-numbers.vim' "ctrl-n to toggle relative and abs numbers
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'sukima/xmledit'
 call vundle#end() " end vundle plugins
 
 " -> 'Shougo/neocomplete.vim'

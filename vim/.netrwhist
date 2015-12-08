@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/Uchiha'
 let g:netrw_dirhist_2='/Users/Uchiha/Dev/work/econify'
 let g:netrw_dirhist_3='/Users/Uchiha'
+let g:netrw_dirhist_4='/Users/Uchiha/dev/work/lets_try_react'
+let g:netrw_dirhist_5='/Users/Uchiha/dev/work/lets_try_react/src'
+let g:netrw_dirhist_6='/Users/Uchiha/dev/work/lets_try_react/src/components'
