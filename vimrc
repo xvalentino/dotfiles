@@ -41,8 +41,10 @@ set shell=zsh\ --login " use zsh for shell
 " ----------------------------------------------------------------------------
 " GUI
 " ----------------------------------------------------------------------------
-:set guifont=Menlo:h20 " set gui font?
-set nu " set relative numbers
+set guioptions-=r
+set guioptions-=L
+:set guifont=Menlo:h15 " set gui font?
+set fu
 set t_Co=256 "colorscheme work with tmux
 set background=dark " dark background
 :let g:colorizer_auto_color = 1 " colors in vim
@@ -120,6 +122,7 @@ autocmd VimResized * :wincmd = " resize panes to respond to Tmux
 " ----------------------------------------------------------------------------
 set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize
 call vundle#begin() " begin vundle plugins
+Plugin 'jpo/vim-railscasts-theme'
 Plugin 'tpope/vim-fugitive' " I can git blame shit in vim
 Plugin 'ggreer/the_silver_searcher' " search stuff or something
 Plugin 'scrooloose/nerdtree' " Nerdtree
@@ -147,6 +150,10 @@ Plugin 'fullybaked/toggle-numbers.vim' "ctrl-n to toggle relative and abs number
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'sukima/xmledit'
+Plugin 'MarcWeber/vim-addon-mw-utils' " snippets  |
+Plugin 'tomtom/tlib_vim' "                        |
+Plugin 'garbas/vim-snipmate' "                    |
+Plugin 'justinj/vim-react-snippets' "             V
 call vundle#end() " end vundle plugins
 
 " -> 'Shougo/neocomplete.vim'
@@ -184,3 +191,4 @@ map <Leader>j :NERDTreeToggle<CR>
 let g:ctrlp_dont_split = 'nerdtree' " after vim . ctrl-p will replace nerdtree instead of make another window
 " -> jsx
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+colorscheme railscasts
