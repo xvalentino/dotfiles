@@ -124,36 +124,26 @@ set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and i
 call vundle#begin() " begin vundle plugins
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'tpope/vim-fugitive' " I can git blame shit in vim
+Plugin 'tpope/vim-surround'
 Plugin 'ggreer/the_silver_searcher' " search stuff or something
 Plugin 'scrooloose/nerdtree' " Nerdtree
-Plugin 'Shougo/neocomplete.vim' " autocomplete
 Plugin 'christoomey/vim-tmux-navigator' "navagate between tmux and vim
 Plugin 'junegunn/seoul256.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'mustache/vim-mustache-handlebars'
 Plugin 't9md/vim-ruby-xmpfilter'
 Plugin 'oblitum/rainbow' " rainbow parens
 Plugin 'gmarik/Vundle.vim' " Vundle to install plugins
 Plugin 'tpope/vim-commentary' " COMMENT STUFF WHOO
 Plugin 'tpope/vim-sensible' " Universal Vim configs
 Plugin 'vim-ruby/vim-ruby' " Ruby syntax highlighting
-Plugin 'fatih/vim-go' " Go syntax highlighting
 Plugin 'tpope/vim-rails' " Rails syntax and shotcuts
-Plugin 'honza/vim-snippets'
-Plugin 'tpope/vim-endwise' " ends created with defs, dos, ifs,
 Plugin 'shougo/neocomplcache.vim' " autocomplete
 Plugin 'tpope/vim-bundler' " syntax highlighting in gemfile, and cool bundle stuff
-Plugin 'Raimondi/delimitMate' " autoclose quotes, parenthesis, brackets, etc.
 Plugin 'thoughtbot/vim-rspec' "run rspec tests from vim
 Plugin 'kien/ctrlp.vim' " navigate through files with ctrl p
 Plugin 'fullybaked/toggle-numbers.vim' "ctrl-n to toggle relative and abs numbers
 Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
 Plugin 'sukima/xmledit'
-Plugin 'MarcWeber/vim-addon-mw-utils' " snippets  |
-Plugin 'tomtom/tlib_vim' "                        |
-Plugin 'garbas/vim-snipmate' "                    |
-Plugin 'justinj/vim-react-snippets' "             V
 call vundle#end() " end vundle plugins
 
 " -> 'Shougo/neocomplete.vim'
