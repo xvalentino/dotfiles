@@ -1,11 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/Uchiha/dev/work/vice/vice-all-verts-api'
-let g:netrw_dirhist_2='/Users/Uchiha/dev/work/vice/vice-all-verts-api/test'
-let g:netrw_dirhist_3='/Users/Uchiha/dev/work/vice/vice-all-verts-api/test/controllers'
-let g:netrw_dirhist_4='/Users/Uchiha/dev/work/vice/vice-all-verts-api/test'
-let g:netrw_dirhist_5='/Users/Uchiha/dev/work/vice/vice-all-verts-api'
-let g:netrw_dirhist_6='/Users/Uchiha/dev/work/vice/vice-all-verts-api/test'
-let g:netrw_dirhist_7='/Users/Uchiha/dev/work/vice/vice-all-verts-api'
-let g:netrw_dirhist_8='/Users/Uchiha/dev/work/vice/vice-all-verts-api/app'
-let g:netrw_dirhist_9='/Users/Uchiha/dev/work/vice/vice-all-verts-api/app/controllers'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/Uchiha/dev/work/tmp/globalize'
+let g:netrw_dirhist_2='/Users/Uchiha/dev/work/Turnstyle'
+let g:netrw_dirhist_3='/Users/Uchiha/dev/work/footloose-react'

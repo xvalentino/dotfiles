@@ -22,6 +22,7 @@ let g:ctrlp_custom_ignore = {
 " ----------------------------------------------------------------------------
 syntax sync minlines=256 " minlines to improve speed?
 :syntax on 
+syntax enable
 set nocursorcolumn " no curosr, improves speed
 set nocursorline " no curosr, improves speed
 " ----------------------------------------------------------------------------
@@ -44,7 +45,6 @@ set shell=zsh\ --login " use zsh for shell
 set guioptions-=r
 set guioptions-=L
 :set guifont=Menlo:h15 " set gui font?
-set fu
 set t_Co=256 "colorscheme work with tmux
 set background=dark " dark background
 :let g:colorizer_auto_color = 1 " colors in vim
@@ -144,6 +144,9 @@ Plugin 'kien/ctrlp.vim' " navigate through files with ctrl p
 Plugin 'fullybaked/toggle-numbers.vim' "ctrl-n to toggle relative and abs numbers
 Plugin 'pangloss/vim-javascript'
 Plugin 'sukima/xmledit'
+Plugin 'lrampa/vim-apib'
+Plugin 'kylef/apiblueprint.vim'
+Plugin 'strogonoff/vim-coffee-script'
 call vundle#end() " end vundle plugins
 
 " -> 'Shougo/neocomplete.vim'
