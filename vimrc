@@ -27,6 +27,5 @@ call vundle#end()
 let g:rainbow_active = 1
 let NERDTreeQuitOnOpen=1
 map <Leader>j :NERDTreeToggle<CR>
-let g:ctrlp_dont_split = 'nerdtree' 
 let g:jsx_ext_required = 0 
 colorscheme railscasts
