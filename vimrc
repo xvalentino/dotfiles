@@ -6,7 +6,7 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 set nocompatible
-set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim " path to dein.vim
+set runtimepath+=~/.vim/bundle/dein/repos/github.com/Shougo/dein.vim " path to dein.vim
 call dein#begin(expand('~/.vim/dein')) " plugins' root path
 	call dein#add('Shougo/dein.vim')
 
