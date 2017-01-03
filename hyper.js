@@ -11,7 +11,7 @@ module.exports = {
     termCSS: '',
     showHamburgerMenu: '',
     showWindowControls: 'false',
-    padding: '12px 14px',
+    padding: '0px 0px',
     colors: {
       black: '#000000',
       red: '#ff0000',
@@ -37,6 +37,11 @@ module.exports = {
     copyOnSelect: false,
     windowSize: [1920, 1080]
   },
-  plugins: ['hyperblue-vibrancy', 'hyper-true-fullscreen', 'hyperfull'],
+  plugins: [
+	  'hyperterm-chesterish',
+	  'hyper-true-fullscreen',
+	  'hyperfull',
+	  'hyperterm-paste',
+  ],
   localPlugins: [],
 };
