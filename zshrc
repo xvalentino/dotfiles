@@ -1,9 +1,9 @@
-export EDITOR=vim # use vim
-ZSH_THEME='pure' # theme
+export EDITOR=nvim # use vim
+ZSH_THEME='hyperzsh' # theme
 export ZSH=$HOME/.oh-my-zsh # Path to your oh-my-zsh installation.
 
 # alias
-alias vls='npm run webpack-dashboard -- -m -c magenta --title ueshell -- npm run shell:classic'
+alias vls='npm run webpack-dashboard -- -m -c cyan --title ueshell -- npm run shell:classic'
 alias :q='exit'
 alias :wq='exit'
 alias b='bundle'
