@@ -4,5 +4,6 @@
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.vim: vim/
+    ~/.config/nvim/init.vim: vimrc
 - shell:
     - [git pull && git submodule update --init --recursive, Installing/updating submodules]
