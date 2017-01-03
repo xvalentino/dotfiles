@@ -34,7 +34,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'oblitum/rainbow'
 	Plug 'altercation/vim-colors-solarized'
 	Plug 'juanedi/predawn.vim'
-	Plug 'jpo/vim-railscasts-theme'
 call plug#end()
 
 " autocomplete
@@ -48,4 +47,3 @@ let g:jsx_ext_required = 0
 
 " colors
 let g:rainbow_active = 1
-colorscheme railscasts
