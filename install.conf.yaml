@@ -6,5 +6,6 @@
     ~/.config/nvim/init.vim: vimrc
     ~/.hyper.js: hyper.js
     ~/.hyper_plugins: hyper_plugins
+    ~/.oh-my-zsh: oh-my-zsh
 - shell:
     - [git pull && git submodule update --init --recursive, Installing/updating submodules]
