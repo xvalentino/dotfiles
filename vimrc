@@ -22,6 +22,9 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-ruby/vim-ruby'
 	Plug 'tpope/vim-bundler'
 	Plug 'isRuslan/vim-es6'
+	Plug 'tpope/vim-fireplace'
+	Plug 'guns/vim-clojure-static'
+	Plug 'guns/vim-clojure-highlight'
 
 	" colors
 	Plug 'oblitum/rainbow'
