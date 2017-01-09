@@ -41,7 +41,6 @@ module.exports = {
     'hyperterm-chesterish',
     'hyper-true-fullscreen',
     'hyperfull',
-    'hyperterm-paste',
     'hypercwd',
   ],
   localPlugins: [],
