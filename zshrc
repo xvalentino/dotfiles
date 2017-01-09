@@ -60,3 +60,9 @@ ulimit -n 10000 # limit shit so processes can't fork themselves infinitly and ea
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="/user/local/bin:$PATH"
+
+# zsh-autosuggest
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Keep this at the end
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

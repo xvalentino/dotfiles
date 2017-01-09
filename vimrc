@@ -4,6 +4,12 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+:set expandtab   
+:set shiftwidth=2
+:set autoindent    
+:set smartindent  
+:set cindent   
+
 call plug#begin('~/.vim/plugged')
         " autocomplete
 	Plug 'neomake/neomake'
@@ -21,6 +27,7 @@ call plug#begin('~/.vim/plugged')
 	" syntax
 	Plug 'vim-ruby/vim-ruby'
 	Plug 'tpope/vim-bundler'
+	Plug 'pangloss/vim-javascript'
 	Plug 'isRuslan/vim-es6'
 	Plug 'tpope/vim-fireplace'
 	Plug 'guns/vim-clojure-static'
