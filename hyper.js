@@ -38,10 +38,11 @@ module.exports = {
     windowSize: [1920, 1080]
   },
   plugins: [
-	  'hyperterm-chesterish',
-	  'hyper-true-fullscreen',
-	  'hyperfull',
-	  'hyperterm-paste',
+    'hyperterm-chesterish',
+    'hyper-true-fullscreen',
+    'hyperfull',
+    'hyperterm-paste',
+    'hypercwd',
   ],
   localPlugins: [],
 };
