@@ -2,7 +2,7 @@ module.exports = {
   config: {
     fontSize: 14,
     fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: 'cyan',
     cursorShape: 'BLOCK',
     foregroundColor: '#fff',
     backgroundColor: '#000',
@@ -38,7 +38,7 @@ module.exports = {
     windowSize: [1920, 1080]
   },
   plugins: [
-    'hyperterm-chesterish',
+    'hyper-chesterish',
     'hyper-true-fullscreen',
     'hyperfull',
     'hypercwd',

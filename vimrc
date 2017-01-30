@@ -32,6 +32,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tpope/vim-fireplace'
 	Plug 'guns/vim-clojure-static'
 	Plug 'guns/vim-clojure-highlight'
+        Plug 'flowtype/vim-flow'
 
 	" colors
 	Plug 'oblitum/rainbow'
