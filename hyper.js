@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     fontSize: 14,
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'Operator Mono Lig, Operator Mono, Dank Mono',
     cursorColor: 'cyan',
     cursorShape: 'BLOCK',
     foregroundColor: '#fff',
@@ -37,11 +37,12 @@ module.exports = {
     copyOnSelect: false,
     windowSize: [1920, 1080]
   },
-  plugins: [
-    'hyper-chesterish',
-    'hyper-true-fullscreen',
-    'hyperfull',
-    'hypercwd',
-  ],
+  plugins: ['hyperfullscreen', 'hyperfull', // 'hyper-line',
+  // 'hyperterm-tabs',
+  // 'hyper-alt-click',
+  // 'hyper-tab-icons',
+  // 'hyper-spotify',
+  // 'gitrocket'
+  'hypercwd', "hyper-night-owl"],
   localPlugins: [],
 };

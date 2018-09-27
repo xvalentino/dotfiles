@@ -3,7 +3,7 @@ ZSH_THEME='hyperzsh' # theme
 export ZSH=$HOME/.oh-my-zsh # Path to your oh-my-zsh installation.
 
 # alias
-alias vls='npm run webpack-dashboard -- -m -c cyan --title ueshell -- npm run shell:classic'
+alias vls='npm run webpack-dashboard -- -m -c magenta --title ueshell -- npm run shell:classic'
 alias :q='exit'
 alias :wq='exit'
 alias b='bundle'
@@ -47,14 +47,14 @@ alias sidekiq-stop="ps -ef | grep sidekiq | grep -v grep | awk '{print $2}' | xa
 
 # functions
 function update_dotfiles { # update dotfiles
-echo 'Updating Dotfiles'
-cd ~/.dotfiles && git pull
-cd ~/Dev/turing
+  echo 'Updating Dotfiles'
+    cd ~/.dotfiles && git pull
+    cd ~/Dev/turing
 }
 
 source $ZSH/oh-my-zsh.sh # use oh-my-zsh
 export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
+. "/usr/local/opt/nvm/nvm.sh"
 PATH=${PATH}:/Users/Uchiha/Library/Android/sdk/platform-tools # export Android Debugging Bridge so I can execute adb anywhere
 ulimit -n 10000 # limit shit so processes can't fork themselves infinitly and eat all of your memory. see https://en.wikipedia.org/wiki/Fork_bomb
 
@@ -67,3 +67,7 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=4
 
 # Keep this at the end
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# alm stuff ugh
+plugins=(java alm bundler hi)
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
